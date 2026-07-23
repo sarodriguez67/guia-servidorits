@@ -78,3 +78,7 @@ sudo chmod o+w .
 ```
 
 Con esto ya podemos usar [scp](#como-subir-archivos-a-mi-servidor) para subir los archivos.
+
+##
+
+> Ya de paso seguime en mi [cuenta principal](https://github.com/Smokyy14) , ¿no?
