@@ -13,7 +13,7 @@ Esto lo verificas entrando a servidorits.uy (Solo accesible mediante las computa
 ```bash
 Usuario: Nombre de tu proyecto en minuscula (Ej: trinity)
 Contraseña: 12345678
-Contenedor: Proxmox VE
+Realm: Proxmox VE
 ```
 
 Ahi dentro dirigite a la consola de tu servidor y si te pide logearte, lo cual es muy probable, ingresá:
@@ -24,8 +24,13 @@ Aunque para verificar la ip no es necesario que inicies sesión (creo)
 ```
 
 Deberias ver esto en la linea de comando:
-\> uits@1.0.0.X < Esa X son los números que faltan para iniciar de sesión.
 
+```bash
+uits in @TuGrupoProyecto in [Directorio]
+ip: 10.0.0.xxx
+>
+```
+Esa X son los números que faltan para iniciar de sesión.
 
 Ya teniendo esto podemos pasar al siguiente punto.
 
@@ -36,10 +41,11 @@ Primero deberás descargar el archivo en la PC.
 
 Una vez teniendo la ip completa, ejecutá esto en la terminal de la PC.
 
-`scp "C:\Users\its-erma03\Desktop\proyecto.zip" uits@10.0.0.x: ../../var/www/html`
+`scp "C:\Users\its-erma03\Desktop\proyecto.zip" uits@10.0.0.x:../../var/www/html`
 
 Con esto ya tendrias el zip subido al servidor.&nbsp;&nbsp;&nbsp;En caso probable que te haya dado  error 403 (Forbidden), [acá tenes la solución](#problemas-con-permiso-denegado)
 
+Ahora si podemos entrar al servidor para descomprimir el zip, esto podemos hacerlo mediante la [pagina web](https://servidorits.uy:8006) o mdiante SSH. Para acceder desde SSH hay que seguir el proceso que se explica en [este punto](#
 Ahora debemos acceder a la ruta a donde subimos el archivo para poder descomprimirlo.
 ```bash
 cd /var/www/html
@@ -64,7 +70,7 @@ Usuario: uits
 Contraseña: UsuarioITS
 ```
 
-Con esto te conectarás al servidor como si estuvieras dentro de la [web](servidorits.uy)
+Con esto te conectarás al servidor como si estuvieras dentro de la [web](https://servidorits.uy:8006)
 
 ### ¿Que haremos con esto?
 
@@ -74,8 +80,9 @@ Ejecutaremos:
 
 ```bash
 cd /var/www/html
-sudo chmod o+w .
+sudo chmod o+w /var/www/html
 ```
+Para comprobar ejecutamos `ls -l ..`. Los ultimos 3 permisos deben tener una w (`drwxr-xrwx.`)
 
 Con esto ya podemos usar [scp](#como-subir-archivos-a-mi-servidor) para subir los archivos.
 
