@@ -44,8 +44,7 @@ Una vez teniendo la ip completa, ejecutá esto en la terminal de la PC.
 
 Con esto ya tendrias el zip subido al servidor.&nbsp;&nbsp;&nbsp;En caso probable que te haya dado error de permisos (Forbidden), [acá tenes la solución](#problemas-con-permiso-denegado)
 
-Ahora si podemos entrar al servidor para descomprimir el zip, esto podemos hacerlo mediante la [pagina web](https://servidorits.uy:8006) o mdiante SSH. Para acceder desde SSH hay que seguir el proceso que se explica en [este punto](#
-Ahora debemos acceder a la ruta a donde subimos el archivo para poder descomprimirlo.
+Ahora si podemos entrar al servidor para descomprimir el zip, esto podemos hacerlo mediante la [pagina web](https://servidorits.uy:8006) o mdiante SSH. Para acceder desde SSH hay que seguir el proceso que se explica en [este punto](#Problemas-con-permiso-denegado). Ahora debemos acceder a la ruta a donde subimos el archivo para poder descomprimirlo.
 ```bash
 cd /var/www/html
 ```
