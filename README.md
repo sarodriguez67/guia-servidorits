@@ -20,7 +20,6 @@ Ahi dentro dirigite a la consola de tu servidor y si te pide logearte, lo cual e
 ```bash
 Usuario: uits
 Contraseña: UsuarioITS
-Aunque para verificar la ip no es necesario que inicies sesión (creo)
 ```
 
 Deberias ver esto en la linea de comando:
