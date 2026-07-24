@@ -8,7 +8,7 @@
 
 ## ¿Como obtengo la IP de mi servidor?
 
-Esto lo verificas entrando a servidorits.uy (Solo accesible mediante las computadoras de los laboratorios)
+Esto lo verificas entrando a [servidorits.uy](https://servidorits.uy:8006) (Solo accesible mediante las computadoras de los laboratorios)
 
 ```bash
 Usuario: Nombre de tu proyecto en minuscula (Ej: trinity)
